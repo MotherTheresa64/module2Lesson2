@@ -8,7 +8,7 @@ In this lesson, we explore Python tuples—a data structure that is similar to l
 1. **notes.py**
    Contains summarized notes for the lesson, including key concepts on creating and using tuples, tuple manipulation, packing and unpacking tuples, and some tuple methods.
 
-2. **lesson2_project.py**
+2. **lessonTwoProject.py**
    - **Engage and Apply Exercise**:  
      A hands-on exercise where you create a tuple with various data types, access its elements, and experiment with tuple immutability.
    - **Final Challenge**:  
