@@ -1,85 +1,97 @@
-# 🧠📓Engage & Apply: Tuple Exploration ---------------------------------------------------->
+# Lesson 2: Python Tuples - Engage & Apply + Final Challenge
 
-# 1. Create a Tuple with different data types
+# ===========================
+# engage and apply ---------> Exercise 1 pre-provided
+# ===========================
+
+# Pre-provided Exercise: Create a tuple with multiple data types, access the first and last elements, 
+# and attempt to modify the tuple to see the immutability error.
+
 my_tuple = (42, "hello", 3.14, True)
 
-# 2. Access and Print Elements
-print("First element:", my_tuple[0])  # Output: 42
-print("Last element:", my_tuple[-1])  # Output: True
+# Access and print the first and last elements
+print("First element:", my_tuple[0])   # Output: 42
+print("Last element:", my_tuple[-1])   # Output: True
 
-# 3. Attempt to Modify the Tuple (This will raise an error)
+# Attempting to modify the tuple to see the immutability error
 try:
-    my_tuple[1] = "world"  # Trying to change the second element
+    my_tuple[1] = "world"  # This should raise an error
 except TypeError as e:
-    print(f"Error: {e}")
-# Explanation: Tuples are immutable, so modifying them will raise a TypeError.
+    print("Error:", e)  # Output: 'tuple' object does not support item assignment
 
+# ===========================
+# engage and apply ---------> Exercise 1 My Version Created
+# ===========================
 
-# 🧠📓 My Version: Tuple Exploration ---------------------------------------------------->
+# My Version: Create a tuple with different data types, 
+# access the second and fourth elements, and attempt modification to see the immutability error.
 
-# 1. Create a Tuple with different data types (integer, string, float, boolean)
-my_tuple = (25, "Python3", 2.718, False)
+my_tuple = (10, "Python", 3.14, "Code", False)
 
-# 2. Access and Print Elements (Second and Last)
-print("Second element:", my_tuple[1])  # Output: Python3
-print("Last element:", my_tuple[-1])   # Output: False
+# Access and print the second and fourth elements
+print("Second element:", my_tuple[1])  # Output: Python
+print("Fourth element:", my_tuple[3])  # Output: Code
 
-# 3. Attempt to Modify the Tuple (This will raise an error)
+# Attempting to modify the tuple to see the immutability error
 try:
-    my_tuple[2] = 1.23  # Trying to change the third element
+    my_tuple[2] = "Changed"  # This should raise an error
 except TypeError as e:
-    print(f"Error: {e}")
+    print("Error:", e)  # Output: 'tuple' object does not support item assignment
 
-# Explanation: Tuples are immutable, so modifying them will raise a TypeError.
+# ===========================
+# final challenge ---------> pre-provided
+# ===========================
 
+# Pre-provided Final Challenge: Create a tuple with at least 6 elements of different data types, 
+# access specific elements, slice, count occurrences, unpack, and concatenate tuples.
 
-
-
-# 👾💻Final Challenge: Tuple Mastery ---------------------------------------------------->
-# 1. Create a Tuple
 my_tuple = (10, "Python", 3.14, "Code", 5, "Immutable")
 
-# 2. Access and Print Elements
+# Access and print the third and fifth elements
 print("Third element:", my_tuple[2])  # Output: 3.14
 print("Fifth element:", my_tuple[4])  # Output: 5
 
-# 3. Slice the Tuple
+# Slice the tuple from the second to the fifth position
 sliced_tuple = my_tuple[1:5]
 print("Sliced tuple:", sliced_tuple)  # Output: ('Python', 3.14, 'Code', 5)
 
-# 4. Count Occurrences
+# Count occurrences of "Code"
 count_code = my_tuple.count("Code")
 print("Count of 'Code':", count_code)  # Output: 1
 
-# 5. Unpack the Tuple
+# Unpack the tuple into individual variables and print them
 a, b, c, d, e, f = my_tuple
 print(a, b, c, d, e, f)  # Output: 10 Python 3.14 Code 5 Immutable
 
-# 6. Concatenate Tuples
+# Concatenate the tuple with another tuple
 new_tuple = my_tuple + ("New", "Tuple")
 print("Concatenated tuple:", new_tuple)  # Output: (10, 'Python', 3.14, 'Code', 5, 'Immutable', 'New', 'Tuple')
 
-# 👾💻 My Version: Tuple Mastery ---------------------------------------------------->
+# ===========================
+# final challenge ---------> My Version Created
+# ===========================
 
-# 1. Create a Tuple with at least 6 elements (mix of integers, strings, floats)
-my_tuple = (15, "Data", 1.618, "Science", 10, "Immutable")
+# My Version: Create a tuple with different data types, 
+# access specific elements, slice, count occurrences, unpack, and concatenate tuples.
 
-# 2. Access and Print Elements (First and Fourth)
-print("First element:", my_tuple[0])  # Output: 15
-print("Fourth element:", my_tuple[3])  # Output: Science
+my_tuple = ("Alice", 30, 5.5, "Engineer", "New York", True)
 
-# 3. Slice the Tuple (Extract elements from 3rd to 6th position)
+# Access and print the second and sixth elements
+print("Second element:", my_tuple[1])  # Output: 30
+print("Sixth element:", my_tuple[5])  # Output: True
+
+# Slice the tuple from the third to the sixth position
 sliced_tuple = my_tuple[2:6]
-print("Sliced tuple:", sliced_tuple)  # Output: (1.618, 'Science', 10, 'Immutable')
+print("Sliced tuple:", sliced_tuple)  # Output: (5.5, 'Engineer', 'New York', True)
 
-# 4. Count Occurrences of 'Science'
-count_science = my_tuple.count("Science")
-print("Count of 'Science':", count_science)  # Output: 1
+# Count occurrences of "Engineer"
+count_engineer = my_tuple.count("Engineer")
+print("Count of 'Engineer':", count_engineer)  # Output: 1
 
-# 5. Unpack the Tuple into individual variables
-a, b, c, d, e, f = my_tuple
-print(a, b, c, d, e, f)  # Output: 15 Data 1.618 Science 10 Immutable
+# Unpack the tuple into individual variables and print them
+name, age, height, profession, location, is_active = my_tuple
+print(name, age, height, profession, location, is_active)  # Output: Alice 30 5.5 Engineer New York True
 
-# 6. Concatenate Tuples (Add new elements)
-new_tuple = my_tuple + ("New", "Challenge")
-print("Concatenated tuple:", new_tuple)  # Output: (15, 'Data', 1.618, 'Science', 10, 'Immutable', 'New', 'Challenge')
+# Concatenate the tuple with another tuple
+new_tuple = my_tuple + ("Python", 2025)
+print("Concatenated tuple:", new_tuple)  # Output: ('Alice', 30, 5.5, 'Engineer', 'New York', True, 'Python', 2025)
